@@ -35,8 +35,5 @@
    "bugs": {
       "url": "https://github.com/GEPROM/eslint-prettier-geprom-sapient/issues"
    },
-   "homepage": "https://github.com/GEPROM/eslint-prettier-geprom-sapient#readme",
-   "scripts": {
-      "postinstall": "node scripts/update-gitignore.js"
-   }
+   "homepage": "https://github.com/GEPROM/eslint-prettier-geprom-sapient#readme"
 }
