@@ -50,10 +50,8 @@ Add scripts to your `package.json`:
 
 - ✅ Airbnb ESLint ruleset
 - ✅ Prettier integration
-- ✅ **Both camelCase and snake_case** naming support
+- ✅ Both camelCase and snake_case naming support
 - ✅ Preconfigured globals: `DbCon`, `DbQuery`, `logger`
-- ✅ React support
-- ✅ Modern ES6+ syntax
 
 ## Configuration Details
 
@@ -61,12 +59,12 @@ Add scripts to your `package.json`:
 
 Both naming styles are accepted without warnings:
 
-- `diffTurnosHistorico` (camelCase)
-- `diff_turnos_historico` (snake_case)
+- `someFunction` (camelCase)
+- `some_function` (snake_case)
 
 ### Application Globals
 
-These globals are pre-declared and don't require imports:
+These globals are pre-declared and don't require imports, any additional global variable available in Sapient should :
 
 - `DbCon` - Database connection class
 - `DbQuery` - Database query class
@@ -116,11 +114,3 @@ module.exports = {
   },
 };
 ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT

@@ -1,39 +1,42 @@
 {
-  "name": "eslint-prettier-geprom-sapient",
-  "version": "1.0.0",
-  "description": "ESLint and Prettier configuration for Geprom Sapient projects with snake_case and camelCase support",
-  "main": "index.js",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "prettier",
-    "airbnb",
-    "react",
-    "code-style",
-    "linter"
-  ],
-  "author": "GEPROM",
-  "license": "MIT",
-  "peerDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^2.8.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.32.0",
-    "prettier": "^2.8.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/GEPROM/eslint-prettier-geprom-sapient.git"
-  },
-  "bugs": {
-    "url": "https://github.com/GEPROM/eslint-prettier-geprom-sapient/issues"
-  },
-  "homepage": "https://github.com/GEPROM/eslint-prettier-geprom-sapient#readme"
+    "name":  "eslint-prettier-geprom-sapient",
+    "version":  "1.0.0",
+    "description":  "ESLint and Prettier configuration for Geprom Sapient projects with snake_case and camelCase support",
+    "main":  "index.js",
+    "keywords":  [
+                     "eslint",
+                     "eslintconfig",
+                     "prettier",
+                     "airbnb",
+                     "react",
+                     "code-style",
+                     "linter"
+                 ],
+    "author":  "GEPROM",
+    "license":  "MIT",
+    "peerDependencies":  {
+                             "eslint":  "^8.0.0",
+                             "prettier":  "^2.8.0"
+                         },
+    "devDependencies":  {
+                            "eslint":  "^8.0.0",
+                            "eslint-config-airbnb":  "^19.0.4",
+                            "eslint-config-prettier":  "^8.5.0",
+                            "eslint-plugin-import":  "^2.26.0",
+                            "eslint-plugin-jsx-a11y":  "^6.6.1",
+                            "eslint-plugin-prettier":  "^4.2.1",
+                            "eslint-plugin-react":  "^7.32.0",
+                            "prettier":  "^2.8.0"
+                        },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/GEPROM/eslint-prettier-geprom-sapient.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/GEPROM/eslint-prettier-geprom-sapient/issues"
+             },
+    "homepage":  "https://github.com/GEPROM/eslint-prettier-geprom-sapient#readme",
+    "scripts":  {
+                    "postinstall":  "node scripts/update-gitignore.js"
+                }
 }
