@@ -1,8 +1,16 @@
 {
    "name": "@geprom/eslint-prettier-sapient",
-   "version": "1.0.1",
+   "version": "1.0.2",
    "description": "ESLint and Prettier configuration for Geprom Sapient projects with snake_case and camelCase support",
    "main": "index.js",
+   "scripts": {
+      "postinstall": "node setup.js"
+   },
+   "files": [
+      "index.js",
+      "setup.js",
+      "prettier-config.js"
+   ],
    "keywords": [
       "eslint",
       "eslintconfig",

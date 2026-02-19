@@ -5,7 +5,7 @@ ESLint and Prettier configuration for Geprom Sapient projects with support for b
 ## Installation
 
 ```bash
-npm install --save-dev @geprom/eslint-prettier-sapient eslint prettier
+npm i @geprom/eslint-prettier-sapient
 ```
 
 ## Usage
