@@ -74,6 +74,36 @@ yarn.lock
    }
 }
 
+// Create .vscode/settings.json if it doesn't exist
+const vscodeDir = path.join(projectRoot, ".vscode");
+const vscodePath = path.join(vscodeDir, "settings.json");
+if (!fs.existsSync(vscodePath)) {
+   const vscodeSettings = {
+      "eslint.enable": true,
+      "eslint.validate": ["javascript", "javascriptreact"],
+      "[javascript]": {
+         "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+         },
+      },
+      "[javascriptreact]": {
+         "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true,
+         },
+      },
+   };
+   try {
+      // Create .vscode directory if it doesn't exist
+      if (!fs.existsSync(vscodeDir)) {
+         fs.mkdirSync(vscodeDir, { recursive: true });
+      }
+      fs.writeFileSync(vscodePath, JSON.stringify(vscodeSettings, null, 2), "utf8");
+      console.log("✓ Created .vscode/settings.json");
+   } catch (error) {
+      console.error("Error creating .vscode/settings.json:", error.message);
+   }
+}
+
 // Function to run a command
 function runCommand(command, args, description) {
    return new Promise((resolve, reject) => {
