@@ -1,5 +1,5 @@
 {
-    "name":  "eslint-prettier-geprom-sapient",
+    "name":  "@geprom/eslint-prettier-sapient",
     "version":  "1.0.0",
     "description":  "ESLint and Prettier configuration for Geprom Sapient projects with snake_case and camelCase support",
     "main":  "index.js",

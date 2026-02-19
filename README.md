@@ -1,11 +1,11 @@
-# eslint-prettier-geprom-sapient
+# @geprom/eslint-prettier-sapient
 
 ESLint and Prettier configuration for Geprom Sapient projects with support for both camelCase and snake_case naming conventions.
 
 ## Installation
 
 ```bash
-npm install --save-dev eslint-prettier-geprom-sapient eslint prettier
+npm install --save-dev @geprom/eslint-prettier-sapient eslint prettier
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Create an `.eslintrc.js` file in your project root:
 
 ```javascript
 module.exports = {
-  extends: ['eslint-prettier-geprom-sapient'],
+  extends: ['@geprom/eslint-prettier-sapient'],
 };
 ```
 
@@ -74,7 +74,7 @@ To extend with additional globals:
 
 ```javascript
 module.exports = {
-  extends: ['eslint-prettier-geprom-sapient'],
+  extends: ['@geprom/eslint-prettier-sapient'],
   globals: {
     myCustomGlobal: 'readonly',
   },
@@ -107,7 +107,7 @@ You can extend or override rules in your project's `.eslintrc.js`:
 
 ```javascript
 module.exports = {
-  extends: ['eslint-prettier-geprom-sapient'],
+  extends: ['@geprom/eslint-prettier-sapient'],
   rules: {
     'max-len': ['warn', { code: 120 }], // Override max line length
     'no-console': 'warn', // Add custom rule
