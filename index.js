@@ -18,6 +18,7 @@ module.exports = {
    globals: {
       DbCon: "readonly",
       DbQuery: "readonly",
+      execute: "readonly",
       logger: "readonly",
    },
    rules: {
@@ -26,7 +27,7 @@ module.exports = {
          {
             properties: "never",
             ignoreDestructuring: true,
-            allow: ["^[a-z]+(_[a-z]+)*$", "^[a-zA-Z]+([A-Z][a-z]+)*$"],
+            allow: ["^[a-z]+(_[a-z]+)*$", "^[a-zA-Z]+([A-Z][a-z]+)*$", "^[a-z]+(_([a-z]+|[A-Z]+))*$"],
          },
       ],
       "jsx-a11y/href-no-hash": ["off"],
